@@ -42,6 +42,7 @@ function addItem(){
                 todo.remove();
             });
         }
+    }
 
     trashIcon.className = 'fas fa-trash';
     trashIcon.style.color = 'lightgrey';
