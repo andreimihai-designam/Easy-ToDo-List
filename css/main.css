@@ -1,0 +1,162 @@
+@import url("https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Fredoka One', cursive;
+  background-image: -webkit-gradient(linear, left top, right top, from(#172235), color-stop(#1b273d), to(#172235));
+  background-image: linear-gradient(to right, #172235, #1b273d, #172235);
+  color: white;
+}
+
+.container {
+  margin: auto;
+  width: 80%;
+}
+
+.container .nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 25px 0;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+}
+
+.container .nav h2 {
+  font-size: 2rem;
+  text-shadow: 0 4px 10px rgba(44, 44, 44, 0.9);
+}
+
+.user-input {
+  border: none;
+  width: 350px;
+  text-align: center;
+}
+
+.user-input input {
+  width: 80%;
+  outline: none;
+  padding: 8px;
+  border: none;
+  border-radius: 5px 0 0 5px;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+  -webkit-transition: all .2s ease-in-out;
+  -moz-transition: all .2s ease-in-out;
+  -ms-transition: all .2s ease-in-out;
+  -o-transition: all .2s ease-in-out;
+}
+
+.user-input input:focus {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  transition: all .3s ease-in-out;
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  -ms-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
+}
+
+.user-input input:hover {
+  -webkit-transform: scale(1.07);
+          transform: scale(1.07);
+}
+
+.user-input button {
+  padding: 8px;
+  width: 20%;
+  border: none;
+}
+
+.user-input button:hover {
+  background-color: rgba(200, 200, 200, 0.5);
+  color: white;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+  cursor: pointer;
+}
+
+.to-do-items {
+  width: 500px;
+  margin: auto;
+}
+
+.item {
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  height: auto;
+  padding: 16px;
+  border-radius: 2px;
+  color: #454545;
+  margin-top: 10px;
+  font-size: 1rem;
+  text-transform: uppercase;
+  transition: all .3s ease-in-out;
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  -ms-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
+}
+
+.item:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.item i {
+  cursor: pointer;
+  margin: 0 5px;
+}
+
+.item i:hover {
+  color: darkgrey;
+}
+
+@media (max-width: 768px) {
+  .nav {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .nav h2 {
+    margin: 10px 0 50px 0;
+  }
+  .user-input {
+    width: 100%;
+  }
+  .to-do-items {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .user-input input {
+    width: 74%;
+  }
+}
+
+@media (max-width: 320px) {
+  .user-input input {
+    width: 60%;
+  }
+}
+/*# sourceMappingURL=main.css.map */
