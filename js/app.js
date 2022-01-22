@@ -30,6 +30,18 @@ function addItem(){
     })
 
     divChild.appendChild(checkIcon);
+    
+    function deleteCheck (e) {
+        const item = e.target;
+        //DELETE TODO
+        if(item.classList[0] === 'trash-btn') {
+            const todo = item.parentElement; //to remove the todo item parent
+            //ANIMATION
+            todo.classList.add('fall');
+            todo.addEventListener('transitionend', function(){
+                todo.remove();
+            });
+        }
 
     trashIcon.className = 'fas fa-trash';
     trashIcon.style.color = 'lightgrey';
@@ -42,4 +54,5 @@ function addItem(){
     toDoItems.appendChild(divParent);
 
     input.value = '';
+    
 }
