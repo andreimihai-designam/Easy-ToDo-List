@@ -8,8 +8,8 @@
 
 body {
   font-family: 'Fredoka One', cursive;
-  background-image: -webkit-gradient(linear, left top, right top, from(#172235), color-stop(#1b273d), to(#172235));
-  background-image: linear-gradient(to right, #172235, #1b273d, #172235);
+  background-image: -webkit-gradient(linear, left top, right top, from(#497469), color-stop(#567a71), to(#497469));
+  background-image: linear-gradient(to right, #497469, #567a71, #497469);
   color: white;
 }
 
